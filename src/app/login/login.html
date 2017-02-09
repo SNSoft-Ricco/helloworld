@@ -1,0 +1,25 @@
+<div class="container">
+
+<div class="loginPage-Header">
+	<h1>{{ login.headerText }}</h1>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="loginId">Login ID:</label>
+			<div class="col-sm-10">
+				<input type="text" ng-model="firstName" id="email" placeholder="Enter your ID">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="loginPwd">Password:</label>
+			<div class="col-sm-10">
+				<input type="Password" ng-model="Password" id="loginPwd">
+			</div>
+	</div>
+	</form>
+	Ready to Rock N' Roll, {{ firstName }}?
+	<button ng-click="login.login()">Right In!</button><br/>
+	Not a user yet? 
+	<button ng-click="login.signup()">Sign Up</button>
+</div>
+
+</div>
